@@ -16,7 +16,6 @@ PyGithub~=2.5.0
 """
 
 
-
 [win_setup]
 en = "Windows setup"
 pl = "Konfiguracja pod Windowsem"

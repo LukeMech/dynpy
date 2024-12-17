@@ -3,7 +3,7 @@ name: Documentation updater
 on:
   push:
     paths:
-      - "docs/*"
+      - "docs/**/*"
 
 jobs:
   build:
