@@ -70,4 +70,4 @@ cd "$env:USERPROFILE\dynpy_project"
 mkdir ./._dynpy_env
 New-Item -ItemType SymbolicLink -Path .\._dynpy_env\dynpy -Target .\dynpy
 ```
-++to_run_instruction++
+👻 ++to_run_instruction++
