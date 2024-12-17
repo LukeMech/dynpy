@@ -73,4 +73,11 @@ git clone https://github.com/bogumilchilinski/dgeometry.git
 ```
 
 ## 🎉 Run!
+We need to create symbolic link, pointing `._dynpy_env` to `dynpy` directory, for compatibility reasons. For now, **the admin rights** are required on Windows for this operation
+```powershell
+cd "$env:USERPROFILE\dynpy_project"
+
+mkdir ./._dynpy_env
+New-Item -ItemType SymbolicLink -Path .\._dynpy_env\dynpy -Target .\dynpy
+```
 To run the code, open the project directory in VSCode, create `test.ipynb` file, open it and choose "venv" from available Python kernels in Jupiter extension

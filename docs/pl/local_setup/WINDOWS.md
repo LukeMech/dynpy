@@ -73,4 +73,11 @@ git clone https://github.com/bogumilchilinski/dgeometry.git
 ```
 
 ## 🎉 Uruchomienie!
+Musimy stworzyć symboliczny link, przekierowujący katalog `._dynpy_env` na katalog `dynpy`, ze względu na kompatybilność. Na razie **wymagane są uprawnienia administratora** na Windowsie dla tej operacji
+```powershell
+cd "$env:USERPROFILE\dynpy_project"
+
+mkdir ./._dynpy_env
+New-Item -ItemType SymbolicLink -Path .\._dynpy_env\dynpy -Target .\dynpy
+```
 Aby uruchomić kod, otwórz utworzoną ścieżkę w Visual Studio Code, stwórz plik `test.ipynb, otwórz i wybierz "venv" z dostępnych kerneli do Pythona w rozszerzeniu Jupiter
