@@ -4,9 +4,10 @@ on:
   push:
     paths:
       - "docs/**/*"
+      - ".github/workflows/doc_generator.yaml"
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
     permissions:           
       contents: write           # 'write' access to repository contents
@@ -28,7 +29,8 @@ jobs:
       run: |
         git config --local user.email "doc-generator[bot]@users.noreply.github.com"
         git config --local user.name "doc-generator[bot]"
-        git commit -a -m "Auto-update documentation"
+        git add .
+        git commit -m "Auto-update documentation"
 
     - name: Push changes
       uses: ad-m/github-push-action@master
