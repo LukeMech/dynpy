@@ -63,4 +63,11 @@ git clone https://github.com/bogumilchilinski/dgeometry.git
 ```
 
 ## 🎉 ++to_run++
+++symbolic_link++
+```powershell
+cd "$env:USERPROFILE\dynpy_project"
+
+mkdir ./._dynpy_env
+New-Item -ItemType SymbolicLink -Path .\._dynpy_env\dynpy -Target .\dynpy
+```
 ++to_run_instruction++

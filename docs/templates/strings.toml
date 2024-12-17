@@ -95,6 +95,9 @@ pl = "Instalacja dynpy i dgeometry"
 [to_run]
 en = "Run!"
 pl = "Uruchomienie!"
+[symbolic_link]
+en = "We need to create symbolic link, pointing `._dynpy_env` to `dynpy` directory, for compatibility reasons. For now, **the admin rights** are required on Windows for this operation"
+pl = "Musimy stworzyć symboliczny link, przekierowujący katalog `._dynpy_env` na katalog `dynpy`, ze względu na kompatybilność. Na razie **wymagane są uprawnienia administratora** na Windowsie dla tej operacji"
 [to_run_instruction]
 en = "To run the code, open the project directory in VSCode, create `test.ipynb` file, open it and choose \"venv\" from available Python kernels in Jupiter extension"
 pl = "Aby uruchomić kod, otwórz utworzoną ścieżkę w Visual Studio Code, stwórz plik `test.ipynb, otwórz i wybierz \"venv\" z dostępnych kerneli do Pythona w rozszerzeniu Jupiter"
