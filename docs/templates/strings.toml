@@ -82,10 +82,10 @@ en = "After install"
 pl = "Po instalacji"
 [set_env_vars]
 en = "in start menu search for \"Set enviroment variables\", then click \"Enviroment variables\" (bottom of the window)"
-pl = "w menu start wyszukaj \"Edytuj zmienne środowiskowe\", następnie kliknij \"Zmienne środowiskowe\" (dół okna)."
+pl = "w menu start wyszukaj \"Edytuj zmienne środowiskowe\", następnie kliknij \"Zmienne środowiskowe\" (dół okna)"
 [add_magickhome_as_currenVersion]
-en = "Then add MAGICK_HOME as \"C:\\Program Files\\ImageMagick-VERSION-Q16)\" (replace VERSION with what is installed)"
-pl = "Potem dodaj MAGICK_HOME jako \"C:\\Program Files\\ImageMagick-VERSION-Q16)\" (zamień VERSION na numer wersji)"
+en = "then add MAGICK_HOME as \"C:\\Program Files\\ImageMagick-VERSION-Q16)\" (replace VERSION with what is installed)"
+pl = "potem dodaj MAGICK_HOME jako \"C:\\Program Files\\ImageMagick-VERSION-Q16)\" (zamień VERSION na numer wersji)"
 
 
 [dynpy_setup]

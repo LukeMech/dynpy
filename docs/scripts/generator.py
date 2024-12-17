@@ -20,8 +20,7 @@ def generate_docs():
 
         with open(template_file, 'r', encoding='utf-8') as f:
             content = f.read()
-            file_path = script_dir.parent / template_file.relative_to(template_dir).parent
-            file_path.mkdir(parents=True, exist_ok=True)
+            file_path = script_dir.parent
         
         # For every language
         for lang in strings["variables"]["languages"]:
@@ -35,7 +34,10 @@ def generate_docs():
                 elif var in strings["variables"]:
                     lang_content = lang_content.replace(f'++{var}++', strings["variables"][var])
 
-            lang_output = file_path / f'{template_file.stem}_{lang}.md'
+            lang_output = file_path / lang / template_file.relative_to(template_dir).parent
+            lang_output.mkdir(parents=True, exist_ok=True)
+            lang_output = lang_output / f'{template_file.stem}.md'
+
             with open(lang_output, 'w', encoding='utf-8') as f:
                 f.write(lang_content)
             
