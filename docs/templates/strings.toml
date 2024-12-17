@@ -1,0 +1,100 @@
+[variables]
+py_recommended_version = "3.10.11"
+languages = ["en", "pl"]
+# TODO: pip auto install dependencies when installing package
+pip_requirements = """
+ipykernel~=6.29.5 
+sympy~=1.13.3 
+numpy~=2.2.0
+scipy~=1.14.1
+pylatex~=1.4.2
+pandas~=2.2.3
+matplotlib~=3.10.0
+pint~=0.24.4
+wand~=0.6.13
+PyGithub~=2.5.0
+"""
+
+
+[win_setup]
+en = "Windows setup"
+pl = "Konfiguracja pod Windowsem"
+[win_setup_instruction]
+en = "To properly configure project enviroment in Windows, follow the steps below"
+pl = "Aby skonfigurować lokalne środowisko uruchomieniowe w systemie Windows, podążaj za instrukcją"
+
+
+[py_setup]
+en = "Python configuration"
+pl = "Konfiguracja Pythona"
+[py_version_table]
+columns = 3
+[[py_version_table.rows]]
+1 = "3.10"
+2 = "✅"
+3_en = "Recommended, fully working"
+3_pl = "Zalecane, działa w pełni"
+[[py_version_table.rows]]
+1 = "3.11"
+2 = "❔✅"
+3_en = "Tests in progress"
+3_pl = "Testy w toku"
+[[py_version_table.rows]]
+1 = "3.12"
+2 = "❔⚠️"
+3_en = "Some errors shown"
+3_pl = "Pokazuje błędy"
+[[py_version_table.rows]]
+1 = "3.13"
+2 = "❔❌"
+3_en = "Significant problems may exist"
+3_pl = "Mogą pojawić się spore problemy"
+
+
+[dev_place_setup]
+en = "Configure working directory"
+pl = "Konfiguracja katalogu projektu"
+[dir_setup]
+en = "Setup directory"
+pl = "Utwórz katalog"
+[venv_setup]
+en = "Configure Python virtual enviroment"
+pl = "Stwórz wirtualne środowisko dla Pythona"
+[go_to_venv]
+en = "Use virtual directory installed Python"
+pl = "Użyj świeżo stworzonego środowiska wirtualnego"
+[install_pip_packages]
+en = "Install pip packages"
+pl = "Zainstaluj wymagane zależności pip"
+
+
+[additional_packages_setup]
+en = "Install required dependencies"
+pl = "Instalacja wymaganych zależności"
+[download_first_start_install]
+en = "Download the first one, then start the installer"
+pl = "Pobierz instalator z pierwszego z brzegu linku i go wystartuj"
+[check]
+en = "Check"
+pl = "Zaznacz"
+[after_install]
+en = "After install"
+pl = "Po instalacji"
+[set_env_vars]
+en = "in start menu search for \"Set enviroment variables\", then click \"Enviroment variables\" (bottom of the window)"
+pl = "w menu start wyszukaj \"Edytuj zmienne środowiskowe\", następnie kliknij \"Zmienne środowiskowe\" (dół okna)."
+[add_magickhome_as_currenVersion]
+en = "Then add MAGICK_HOME as \"C:\\Program Files\\ImageMagick-VERSION-Q16)\" (replace VERSION with what is installed)"
+pl = "Potem dodaj MAGICK_HOME jako \"C:\\Program Files\\ImageMagick-VERSION-Q16)\" (zamień VERSION na numer wersji)"
+
+
+[dynpy_setup]
+en = "Setup the dynpy and dgeometry"
+pl = "Instalacja dynpy i dgeometry"
+
+[to_run]
+en = "Run!"
+pl = "Uruchomienie!"
+[to_run_instruction]
+en = "To run the code, open the project directory in VSCode, create `test.ipynb` file, open it and choose \"venv\" from available Python kernels in Jupiter extension"
+pl = "Aby uruchomić kod, otwórz utworzoną ścieżkę w Visual Studio Code, stwórz plik `test.ipynb, otwórz i wybierz \"venv\" z dostępnych kerneli do Pythona w rozszerzeniu Jupiter"
