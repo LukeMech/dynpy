@@ -67,7 +67,7 @@ Checked python versions: `3.10`
 <details>
   <summary>🪟 Windows</summary>
 
-  1. Install [ImageMagick](https://imagemagick.org/index.php), [Python](https://www.python.org/) (using [pyenv-win](https://github.com/pyenv-win/pyenv-win)), [git](https://github.com/microsoft/git), and [Visual Studio Build Tools with C++ workflow](https://visualstudio.microsoft.com/pl/visual-cpp-build-tools/) <br>
+  1. Install [ImageMagick](https://imagemagick.org/index.php), [Python](https://www.python.org/) (using [pyenv-win](https://github.com/pyenv-win/pyenv-win)) and [git](https://github.com/microsoft/git) <br>
   Step 1: Download [ImageMagick](https://imagemagick.org/script/download.php#windows) (1st one on page) -> check "Install development headers for C and C++", then hit "Install" <br>
   Step 2: Set enviroment variables (search in start menu), then add MAGICK_HOME set as `C:\Program Files\ImageMagick-VERSION(-Q16)` (make sure the folder is right) <br>
   Step 3:
@@ -75,7 +75,7 @@ Checked python versions: `3.10`
   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process; Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
   <now reopen powershell>
   pyenv install 3.10
-  winget install Microsoft.Git & winget
+  winget install Microsoft.Git
   ```
 
   2. Create your work folder (can be any path) and create python virtual enviroment:
