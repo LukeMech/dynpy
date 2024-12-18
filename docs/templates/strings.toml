@@ -15,10 +15,9 @@ wand~=0.6.13
 PyGithub~=2.5.0
 """
 
-
 [win_setup]
-en = "Windows setup"
-pl = "Konfiguracja pod Windowsem"
+en = "**DURING DEVELOPMENT** Windows setup"
+pl = "**W TRAKCIE OPRACOWYWANIA** Konfiguracja pod Windowsem"
 [win_setup_instruction]
 en = "To properly configure project enviroment in Windows, follow the steps below"
 pl = "Aby skonfigurować lokalne środowisko uruchomieniowe w systemie Windows, podążaj za instrukcją"
@@ -74,9 +73,6 @@ en = "Install pip packages"
 pl = "Zainstaluj wymagane zależności pip"
 
 
-[additional_packages_setup]
-en = "Install required dependencies"
-pl = "Instalacja wymaganych zależności"
 [download_first_start_install]
 en = "Download the first one, then start the installer"
 pl = "Pobierz instalator z pierwszego z brzegu linku i go wystartuj"
@@ -86,13 +82,16 @@ pl = "Zaznacz"
 [after_install]
 en = "After install"
 pl = "Po instalacji"
+
+[additional_packages_setup]
+en = "Install required dependencies"
+pl = "Instalacja wymaganych zależności"
 [set_env_vars]
 en = "in start menu search for \"Set enviroment variables\", then click \"Enviroment variables\" (bottom of the window)"
 pl = "w menu start wyszukaj \"Edytuj zmienne środowiskowe\", następnie kliknij \"Zmienne środowiskowe\" (dół okna)"
 [add_magickhome_as_currenVersion]
 en = "then add MAGICK_HOME as \"C:\\Program Files\\ImageMagick-VERSION-Q16)\" (replace VERSION with what is installed)"
 pl = "potem dodaj MAGICK_HOME jako \"C:\\Program Files\\ImageMagick-VERSION-Q16)\" (zamień VERSION na numer wersji)"
-
 
 [dynpy_setup]
 en = "Setup the dynpy and dgeometry"

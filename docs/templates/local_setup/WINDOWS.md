@@ -34,15 +34,18 @@ pip install ++pip_requirements++
 
 # ⚒️ ++additional_packages_setup++
 
+## [Git](https://github.com/Microsoft/Git/releases)
+```powershell
+winget install Microsoft.Git
+```
+
 ## [ImageMagick](https://imagemagick.org/script/download.php#windows)
 1. ++download_first_start_install++. <br> 
 2. ++check++ "Install development headers for C and C++". <br>
 3. ++after_install++ ++set_env_vars++, ++add_magickhome_as_currenVersion++
 
-## [Git](https://github.com/Microsoft/Git/releases)
-```powershell
-winget install Microsoft.Git
-```
+## [TeXLive](https://www.tug.org/texlive/windows.html#install)
+1. ++download_first_start_install++
 
 # 🐳 ++dynpy_setup++
 ```powershell

@@ -61,7 +61,7 @@ Pendulum().interactive_preview()
 
 # 🐳 Using locally
 
-*While it's highly unrecommended, you can run the project locally. With all libraries it may take ~10GB of disk space.*
+*While it's highly unrecommended, you can run the project locally. With all libraries and dependencies it may take ~20GB of disk space.*
 
 ❓ What OS do you use and what is your language?
 
