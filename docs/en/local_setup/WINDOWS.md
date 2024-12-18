@@ -1,4 +1,4 @@
-# 🪟 Windows setup
+# 🪟 **DURING DEVELOPMENT** Windows setup
 
 To properly configure project enviroment in Windows, follow the steps below
 
@@ -39,15 +39,18 @@ pip install ipykernel~=6.29.5 sympy~=1.13.3 numpy~=2.2.0 scipy~=1.14.1 pylatex~=
 
 # ⚒️ Install required dependencies
 
+## [Git](https://github.com/Microsoft/Git/releases)
+```powershell
+winget install Microsoft.Git
+```
+
 ## [ImageMagick](https://imagemagick.org/script/download.php#windows)
 1. Download the first one, then start the installer. <br> 
 2. Check "Install development headers for C and C++". <br>
 3. After install in start menu search for "Set enviroment variables", then click "Enviroment variables" (bottom of the window), then add MAGICK_HOME as "C:\Program Files\ImageMagick-VERSION-Q16)" (replace VERSION with what is installed)
 
-## [Git](https://github.com/Microsoft/Git/releases)
-```powershell
-winget install Microsoft.Git
-```
+## [TeXLive](https://www.tug.org/texlive/windows.html#install)
+1. Download the first one, then start the installer
 
 # 🐳 Setup the dynpy and dgeometry
 ```powershell

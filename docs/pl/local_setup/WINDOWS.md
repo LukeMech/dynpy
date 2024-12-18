@@ -1,4 +1,4 @@
-# 🪟 Konfiguracja pod Windowsem
+# 🪟 **W TRAKCIE OPRACOWYWANIA** Konfiguracja pod Windowsem
 
 Aby skonfigurować lokalne środowisko uruchomieniowe w systemie Windows, podążaj za instrukcją
 
@@ -39,15 +39,18 @@ pip install ipykernel~=6.29.5 sympy~=1.13.3 numpy~=2.2.0 scipy~=1.14.1 pylatex~=
 
 # ⚒️ Instalacja wymaganych zależności
 
+## [Git](https://github.com/Microsoft/Git/releases)
+```powershell
+winget install Microsoft.Git
+```
+
 ## [ImageMagick](https://imagemagick.org/script/download.php#windows)
 1. Pobierz instalator z pierwszego z brzegu linku i go wystartuj. <br> 
 2. Zaznacz "Install development headers for C and C++". <br>
 3. Po instalacji w menu start wyszukaj "Edytuj zmienne środowiskowe", następnie kliknij "Zmienne środowiskowe" (dół okna), potem dodaj MAGICK_HOME jako "C:\Program Files\ImageMagick-VERSION-Q16)" (zamień VERSION na numer wersji)
 
-## [Git](https://github.com/Microsoft/Git/releases)
-```powershell
-winget install Microsoft.Git
-```
+## [TeXLive](https://www.tug.org/texlive/windows.html#install)
+1. Pobierz instalator z pierwszego z brzegu linku i go wystartuj
 
 # 🐳 Instalacja dynpy i dgeometry
 ```powershell
