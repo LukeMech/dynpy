@@ -66,8 +66,7 @@ Pendulum().interactive_preview()
 ❓ What OS do you use and what is your language?
 
 🇺🇸 EN: <br>
-🪟 [Windows](/docs/pl/local_setup/WINDOWS.md) <br>
-
-🇵🇱 PL: <br>
 🪟 [Windows](/docs/en/local_setup/WINDOWS.md) <br>
 
+🇵🇱 PL: <br>
+🪟 [Windows](/docs/pl/local_setup/WINDOWS.md) <br>

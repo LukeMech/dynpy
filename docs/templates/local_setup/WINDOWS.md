@@ -4,17 +4,7 @@
 
 # 🐍 ++py_setup++
 
-<details>
-  <summary> Python</summary>
-  
-  | Python Version | Status                       | Notes                                        |
-  |----------------|------------------------------|----------------------------------------------|
-  | **3.10**       | ✅ **Recommended**           | **Fully working**                           |
-  | 3.11           | ✅ Runs OK                   | Tests in progress                            |
-  | 3.12           | ✅⚠️ Warnings shown         | Not tested, optimization may be required     |
-  | 3.13           | ⚠️ A lot of warnings         | Significant problems may exist               |
-
-</details>
+++py_version_table++
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process; Invoke-Expression "& { $(Invoke-WebRequest -UseBasicParsing -Uri 'https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1').Content }"
