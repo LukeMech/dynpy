@@ -1,5 +1,6 @@
 [variables]
-py_recommended_version = "3.10.11"
+py_recommended_version_win = "3.10.11"
+py_recommended_version = "3.10.16"
 languages = ["en", "pl"]
 # TODO: pip auto install dependencies when installing package
 pip_requirements = """
@@ -18,10 +19,14 @@ PyGithub~=2.5.0
 [win_setup]
 en = "**DURING DEVELOPMENT** Windows setup"
 pl = "**W TRAKCIE OPRACOWYWANIA** Konfiguracja pod Windowsem"
-[win_setup_instruction]
-en = "To properly configure project enviroment in Windows, follow the steps below"
-pl = "Aby skonfigurować lokalne środowisko uruchomieniowe w systemie Windows, podążaj za instrukcją"
 
+[linux_setup]
+en = "**DURING DEVELOPMENT** Linux setup"
+pl = "**W TRAKCIE OPRACOWYWANIA** Konfiguracja pod Linuxem"
+
+[setup_instruction]
+en = "To properly configure project enviroment, follow the steps below"
+pl = "Aby skonfigurować lokalne środowisko uruchomieniowe, podążaj za instrukcją"
 
 [py_setup]
 en = "Python configuration"
@@ -73,9 +78,9 @@ en = "Install pip packages"
 pl = "Zainstaluj wymagane zależności pip"
 
 
-[download_first_start_install]
-en = "Download the first one, then start the installer"
-pl = "Pobierz instalator z pierwszego z brzegu linku i go wystartuj"
+[download_and_start_install]
+en = "Download the proper one, then start the installer"
+pl = "Pobierz instalator z wybranej wersji i go wystartuj"
 [check]
 en = "Check"
 pl = "Zaznacz"
@@ -102,7 +107,11 @@ en = "Run!"
 pl = "Uruchomienie!"
 [symbolic_link]
 en = "We need to create symbolic link, pointing `._dynpy_env` to `dynpy` directory, for compatibility reasons. For now, **the admin rights** are required on Windows for this operation"
-pl = "Musimy stworzyć symboliczny link, przekierowujący katalog `._dynpy_env` na katalog `dynpy`, ze względu na kompatybilność. Na razie **wymagane są uprawnienia administratora** na Windowsie dla tej operacji"
+pl = "Musimy stworzyć symboliczny link, przekierowujący katalog `._dynpy_env` na katalog `dynpy`, ze względu na kompatybilność"
+[win_admin_req]
+en = "For now, **the admin rights** are required on Windows for this operation"
+pl = "Na ten moment **wymagane są uprawnienia administratora** na Windowsie dla tej operacji"
+
 [to_run_instruction]
 en = "To run the code, open the project directory in VSCode, create `test.ipynb` file, open it and choose \"venv\" from available Python kernels in Jupiter extension"
 pl = "Aby uruchomić kod, otwórz ścieżkę z projektem w Visual Studio Code, stwórz plik `test.ipynb`, otwórz i wybierz \"venv\" z dostępnych kerneli do Pythona w rozszerzeniu Jupiter"

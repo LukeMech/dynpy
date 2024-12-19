@@ -1,6 +1,6 @@
 # 🪟 ++win_setup++
 
-++win_setup_instruction++
+++setup_instruction++
 
 # 🐍 ++py_setup++
 
@@ -9,7 +9,7 @@
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process; Invoke-Expression "& { $(Invoke-WebRequest -UseBasicParsing -Uri 'https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1').Content }"
 <now reopen powershell>
-pyenv install ++py_recommended_version++
+pyenv install ++py_recommended_version_win++
 ```
 
 # 📦 ++dev_place_setup++
@@ -20,7 +20,7 @@ mkdir "$env:USERPROFILE\dynpy_project"
 cd "$env:USERPROFILE\dynpy_project"
 
 # ++venv_setup++
-pyenv shell ++py_recommended_version++
+pyenv shell ++py_recommended_version_win++
 python -m venv ".\venv"
 
 # ++go_to_venv++
@@ -40,12 +40,15 @@ winget install Microsoft.Git
 ```
 
 ## [ImageMagick](https://imagemagick.org/script/download.php#windows)
-1. ++download_first_start_install++. <br> 
+1. ++download_and_start_install++. <br> 
 2. ++check++ "Install development headers for C and C++". <br>
 3. ++after_install++ ++set_env_vars++, ++add_magickhome_as_currenVersion++
 
 ## [TeXLive](https://www.tug.org/texlive/windows.html#install)
-1. ++download_first_start_install++
+++download_and_start_install++
+
+## [Ghostscript](https://ghostscript.com/releases/gsdnld.html)
+++download_and_start_install++
 
 # 🐳 ++dynpy_setup++
 ```powershell
@@ -56,7 +59,7 @@ git clone https://github.com/bogumilchilinski/dgeometry.git
 ```
 
 ## 🎉 ++to_run++
-++symbolic_link++
+++symbolic_link++. ++win_admin_req++
 ```powershell
 cd "$env:USERPROFILE\dynpy_project"
 
