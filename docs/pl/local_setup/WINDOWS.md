@@ -1,6 +1,6 @@
 # 🪟 **W TRAKCIE OPRACOWYWANIA** Konfiguracja pod Windowsem
 
-Aby skonfigurować lokalne środowisko uruchomieniowe w systemie Windows, podążaj za instrukcją
+Aby skonfigurować lokalne środowisko uruchomieniowe, podążaj za instrukcją
 
 # 🐍 Konfiguracja Pythona
 
@@ -45,12 +45,15 @@ winget install Microsoft.Git
 ```
 
 ## [ImageMagick](https://imagemagick.org/script/download.php#windows)
-1. Pobierz instalator z pierwszego z brzegu linku i go wystartuj. <br> 
+1. Pobierz instalator z wybranej wersji i go wystartuj. <br> 
 2. Zaznacz "Install development headers for C and C++". <br>
 3. Po instalacji w menu start wyszukaj "Edytuj zmienne środowiskowe", następnie kliknij "Zmienne środowiskowe" (dół okna), potem dodaj MAGICK_HOME jako "C:\Program Files\ImageMagick-VERSION-Q16)" (zamień VERSION na numer wersji)
 
 ## [TeXLive](https://www.tug.org/texlive/windows.html#install)
-1. Pobierz instalator z pierwszego z brzegu linku i go wystartuj
+Pobierz instalator z wybranej wersji i go wystartuj
+
+## [Ghostscript](https://ghostscript.com/releases/gsdnld.html)
+Pobierz instalator z wybranej wersji i go wystartuj
 
 # 🐳 Instalacja dynpy i dgeometry
 ```powershell
@@ -61,7 +64,7 @@ git clone https://github.com/bogumilchilinski/dgeometry.git
 ```
 
 ## 🎉 Uruchomienie!
-Musimy stworzyć symboliczny link, przekierowujący katalog `._dynpy_env` na katalog `dynpy`, ze względu na kompatybilność. Na razie **wymagane są uprawnienia administratora** na Windowsie dla tej operacji
+Musimy stworzyć symboliczny link, przekierowujący katalog `._dynpy_env` na katalog `dynpy`, ze względu na kompatybilność. Na ten moment **wymagane są uprawnienia administratora** na Windowsie dla tej operacji
 ```powershell
 cd "$env:USERPROFILE\dynpy_project"
 

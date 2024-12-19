@@ -1,6 +1,6 @@
 # 🪟 **DURING DEVELOPMENT** Windows setup
 
-To properly configure project enviroment in Windows, follow the steps below
+To properly configure project enviroment, follow the steps below
 
 # 🐍 Python configuration
 
@@ -45,12 +45,15 @@ winget install Microsoft.Git
 ```
 
 ## [ImageMagick](https://imagemagick.org/script/download.php#windows)
-1. Download the first one, then start the installer. <br> 
+1. Download the proper one, then start the installer. <br> 
 2. Check "Install development headers for C and C++". <br>
 3. After install in start menu search for "Set enviroment variables", then click "Enviroment variables" (bottom of the window), then add MAGICK_HOME as "C:\Program Files\ImageMagick-VERSION-Q16)" (replace VERSION with what is installed)
 
 ## [TeXLive](https://www.tug.org/texlive/windows.html#install)
-1. Download the first one, then start the installer
+Download the proper one, then start the installer
+
+## [Ghostscript](https://ghostscript.com/releases/gsdnld.html)
+Download the proper one, then start the installer
 
 # 🐳 Setup the dynpy and dgeometry
 ```powershell
@@ -61,7 +64,7 @@ git clone https://github.com/bogumilchilinski/dgeometry.git
 ```
 
 ## 🎉 Run!
-We need to create symbolic link, pointing `._dynpy_env` to `dynpy` directory, for compatibility reasons. For now, **the admin rights** are required on Windows for this operation
+We need to create symbolic link, pointing `._dynpy_env` to `dynpy` directory, for compatibility reasons. For now, **the admin rights** are required on Windows for this operation. For now, **the admin rights** are required on Windows for this operation
 ```powershell
 cd "$env:USERPROFILE\dynpy_project"
 
